@@ -18,7 +18,7 @@
       position: absolute;
       top: 100px;
       padding: 100px;
-      font-size: 300%; 
+      font-size: 500%; 
       }
         }
 @media screen and (max-width: 500px){
@@ -26,15 +26,15 @@
       position: absolute;
       top: 110px;
       padding: 50px;
-      font-size: 400%; 
+      font-size: 500%; 
       }
         }
 @media screen and (max-width: 450px){
           #principal{ 
             position: absolute;
-            top: 50px;
-            padding: 20px;
-            font-size: 200%; 
+            top: 100px;
+            padding: 50px;
+            font-size: 600%; 
           }
             }
 @media screen and (max-width: 400px){
@@ -42,7 +42,7 @@
               position: absolute;
               top: 50px;
               padding: 20px;
-              font-size: 200%; 
+              font-size: 600%; 
           }
             }
 @media screen and (max-width: 250px){
@@ -50,37 +50,23 @@
                 position: absolute;
 /*parte superior */top: 50px;
 /* relleno */padding: 10px;
-/* tamaño de fuente */font-size: 100%; 
+/* tamaño de fuente */font-size: 600%; 
               }
                 }
 /* FIN TITULO PRINCIPAL SILLONESFB */
 
-footer {
-  
-  bottom: 0;
-  text-align: center;
-  padding: 3px;
-  background-color: rgb(38, 38, 43);
-  color: white;
-  /* footer
-{
-    margin-top:50px;
-    widtauto%;
-    heiauto;
-    background-color:red;
-} */
-}
+
 
 @media screen and (max-width: 770px){
   body { 
     position: absolute;
   }
     }
-    @media screen and (max-width: 460px){
-      .hojas { 
-        position: relative;
-      }
-        }
+@media screen and (max-width: 460px){
+  .hojas { 
+    position: relative;
+  } 
+}
     
 /* light box */
 
@@ -108,13 +94,10 @@ footer {
 }
 
 /*Estilos del modal*/
-
 .modal {
     display: none;
 }
-
 .modal:target {
-    
     display: block;
     position: fixed;
     background: rgba(0,0,0,0.8);
@@ -123,8 +106,6 @@ footer {
     width: 100%;
     height: 100%;
 }
-
-
 .imagen {
     width: 100%;
     height: 50%;
@@ -133,20 +114,24 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
 .imagen a {
     color: #fff;
     font-size: 40px;
     text-decoration: none;
     margin: 0 10px;
-} 
-
+}
 /* .imagen a:nth-child(2) {
     margin: 0;
     height: 100%;
     flex-shrink: 2;
 }
  */
+ @media screen and (max-width: 1000px){
+  .zoom_desaparecer{ 
+    display:none;
+  }
+    }
+
 .imagen img {
     width: 500px;
     height: 100%;
@@ -206,17 +191,124 @@ footer {
             }
 /* fin light box */
 
-
-@media screen and (max-width: 1000px){
-  .zoom_desaparecer{ 
-    display:none;
+    /* FOOTER */
+  footer {
+     bottom: 0;
+     text-align: center;
+     padding: 3px;
+     background-color: rgb(38, 38, 43);
+     color: white;
+    }
+  @media only screen and (min-width:350px) and (max-width: 600px){
+   footer{
+     font-size: 30px;
+    }
   }
+  @media only screen and (min-width:100px) and (max-width: 349px){
+    footer{
+      font-size: 40px;
+     }
+   }
+  /*FIN FOOTER */
+  
+/* CONTACTOS */
+@media only screen and (min-width:350px) and (max-width: 600px){
+ .contactos{
+    font-size: 30px;
+   }
+ }
+ @media only screen and (min-width:100px) and (max-width: 349px){
+  .contactos{
+     font-size: 50px;
     }
+  }
+/* FIN CONTACTOS */
 
-/*    @media screen and (max-width: 200px){
-    .card{
-                height: auto;
-                width: auto;
-
+  /* PRODUCTOS DESTACADOS*/
+  @media only screen and (max-width: 600px){
+    .Productosdestacados {
+       display: none;
+      }
     }
-  }  */
+   
+     @media only screen and (min-width:100px) and (max-width: 600px){
+      .imagenProductoDestacado {
+         width: 100%;
+        }
+     }
+  /* BOTON */
+  @media only screen and (min-width:350px) and (max-width: 600px){
+    .boton{
+       width: 150px;
+       height: 70px;
+       
+      }
+    }
+    @media only screen and (min-width:100px) and (max-width: 349px){
+     .boton{
+        width: 200px; 
+        height: 70px;   
+       }
+     }
+ 
+  @media only screen and (min-width:350px) and (max-width: 600px){
+    .boton p{
+      font-size: 30px;
+    }
+  }
+  @media only screen and (min-width:100px) and (max-width: 349px){
+    .boton p{
+       font-size: 30px;
+      }
+    }
+    @media only screen and (max-width: 600px){
+      .fabricantesDirectos{
+        font-size: 40px;
+      }
+    }
+    @media only screen and (max-width: 600px){
+      .Bienvenidos{
+         font-size: 50px;
+        }
+      }
+
+
+    
+   /* FIN BOTON */
+  /* FIN PREDUCTOS DESTACADOS*/
+
+/*MENU DEL NAVEGADOR */
+@media only screen and (min-width:100px) and (max-width: 600px){
+  a{
+    font-size:30px;
+  }
+  }
+  @media only screen and (min-width:100px) and (max-width: 349px){
+    a{
+      font-size:50px;
+    }
+   }
+/* FIN MENU DEL NAVEGADOR*/
+
+@media only screen and (min-width:100px) and (max-width: 600px){
+  #menuCSS{
+    font-size:30px;
+  }
+  }
+  @media only screen and (min-width:100px) and (max-width: 349px){
+    #menuCSS{
+      font-size:50px;
+    }
+   }
+   @media only screen and (min-width:100px) and (max-width: 600px){
+    .muestra{
+      font-size:30px;
+    }
+    }
+    @media only screen and (min-width:100px) and (max-width: 349px){
+      .muestra{
+        font-size:50px;
+      }
+     }
+  
+
